@@ -1,0 +1,10 @@
+{
+  "filename": "mobilenet_v2-b0353104.pth",
+  "bytes": 14212972,
+  "sha256_once_for_release_identity": "b03531047ffacf1e2488318dcd2aba1126cde36e3bfe1aa5cb07700aeeee9889",
+  "published_url_prefix_match": true,
+  "official_url": "https://download.pytorch.org/models/mobilenet_v2-b0353104.pth",
+  "source_definition": "https://github.com/pytorch/vision/blob/v0.5.0/torchvision/models/mobilenet.py",
+  "default_enum_substitution_permitted": false,
+  "redistribution_clearance": "NOT_ESTABLISHED; library BSD license does not settle weight terms"
+}

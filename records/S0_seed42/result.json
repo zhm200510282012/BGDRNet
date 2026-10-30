@@ -1,0 +1,39 @@
+{
+  "variant": "S0",
+  "seed": 42,
+  "best_epoch": 30,
+  "validation": {
+    "mIoU": 0.816418260744707,
+    "glass_IoU": 0.7613991078626217,
+    "MAE": 0.09666881072858748,
+    "boundary_F1": 0.5367675610109923,
+    "non_glass_FPR": 0.06696491737888066,
+    "images": 542,
+    "TP": 39882635,
+    "FP": 6080153,
+    "TN": 84715942,
+    "FN": 6417934,
+    "glass_FNR": 0.13861458160481785
+  },
+  "training_parameters": 255969,
+  "train_val_peak_allocated_MiB": 551.99609375,
+  "train_val_peak_reserved_MiB": 642.0,
+  "efficiency": {
+    "parameters": 255969,
+    "conv_MACs": 269205504,
+    "conv_FLOPs_2MACs": 538411008,
+    "linear_MACs": 0,
+    "attention_MACs": 0,
+    "matrix_FLOPs_2MACs": 538411008,
+    "matrix_FLOPs_scope": "conv + linear + QK/AV matrix operations; excludes normalization, softmax, interpolation and elementwise ops",
+    "FLOPs_scope": "conv only; excludes normalization, bias, pooling, activations, resize and elementwise operations",
+    "latency_ms_median": 7.4139039516448975,
+    "latency_ms_p95": 7.728140759468078,
+    "precision": "AMP BF16, FP32 weights; batch1; model only; no disk/CPU postprocess",
+    "measurement_process": "fresh subprocess for each variant; no optimizer or data cache in this process",
+    "inference_baseline_allocated_MiB": 1.82177734375,
+    "inference_peak_allocated_MiB": 14.9873046875,
+    "inference_incremental_allocated_MiB": 13.16552734375,
+    "inference_peak_reserved_MiB": 28.0
+  }
+}

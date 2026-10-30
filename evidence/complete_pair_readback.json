@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "endpoint_records": 12,
+  "per_image_counts_and_six_metrics_recomputed": true,
+  "paired_mean_sample_sd_verified": true,
+  "threshold_and_checkpoint_epochs_verified": true,
+  "new_training": false,
+  "new_inference": false,
+  "plots": false
+}

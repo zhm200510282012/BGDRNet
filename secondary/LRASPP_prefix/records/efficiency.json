@@ -1,0 +1,25 @@
+{
+  "model": "LRASPP_prefix",
+  "parameters": 256324,
+  "conv_MACs": 200646656,
+  "linear_MACs": 0,
+  "attention_MACs": 0,
+  "matrix_FLOPs_2MACs": 401293312,
+  "scope": {
+    "size": 256,
+    "batch": 1,
+    "precision": "AMP BF16, FP32 weights",
+    "warmup": 60,
+    "rounds": 4,
+    "samples_per_round": 40,
+    "orders": "forward/reverse/reverse/forward; alternate models after each sample",
+    "timing": "synchronized host perf_counter; model-only with normalization/output resize, excludes disk/decode/native postprocess",
+    "compute": "2*(Conv2d+Linear+attention QK/AV MACs); excludes resize/norm/elementwise/pooling",
+    "memory": "Fresh subprocess per model, absolute allocated/reserved peaks and incremental activation memory; benchmark shared-residency memory reported separately"
+  },
+  "baseline_allocated_MiB": 1.81396484375,
+  "peak_allocated_MiB": 8.79052734375,
+  "incremental_activation_MiB": 6.9765625,
+  "peak_reserved_MiB": 28.0,
+  "process": "Fresh subprocess, one model, no optimizer or data cache"
+}

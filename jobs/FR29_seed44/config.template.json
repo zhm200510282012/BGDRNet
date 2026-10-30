@@ -1,0 +1,73 @@
+{
+  "created_at": "2026-10-29T13:46:20.364682+00:00",
+  "stage": "Frozen FR28/FR29 paired seed replication",
+  "dataset_root": "${GSD_ROOT}",
+  "counts": {
+    "train": 2168,
+    "val": 542
+  },
+  "official_test_policy": "NO_ACCESS_NO_EVALUATION_IN_THIS_STAGE",
+  "extra_used": false,
+  "seed": 44,
+  "split_seed": 20261025,
+  "variant_order": [
+    "FR29"
+  ],
+  "size": 256,
+  "epochs": 40,
+  "batch_size": 8,
+  "lr": 0.0003,
+  "weight_decay": 0.01,
+  "scheduler": "CosineAnnealingLR T_max40 eta_min0; step after epoch",
+  "optimizer": "AdamW",
+  "precision": "AMP bf16; no GradScaler",
+  "threads": 4,
+  "workers": 0,
+  "weights": "${MOBILENET_V2_B0353104}",
+  "pretraining": "identical cached ImageNet MobileNetV2 prefix features[:11] in all variants",
+  "backbone_BN": "running statistics frozen; affine trainable",
+  "augmentation": "RGB bilinear/mask nearest resize256, train horizontal flip p0.5; same epoch-derived order and flip stream",
+  "upsample": "nearest; strict deterministic algorithms",
+  "region_weight": 0.2,
+  "edge_weight": 0.2,
+  "boundary_radius": 2,
+  "segmentation_loss": "BCEWithLogits + per-image soft IoU loss",
+  "checkpoint_selection": "maximum development validation global mIoU; earlier epoch wins exact tie",
+  "inference_parameter_ceiling": 278804,
+  "baseline_gate": {
+    "min_validation_mIoU": 0.8141154130292347,
+    "min_validation_glass_IoU": 0.7541193976966393,
+    "reference_old_A_validation": {
+      "mIoU": 0.8341154130292348,
+      "glass_IoU": 0.7841193976966393,
+      "MAE": 0.1014516457095973,
+      "boundary_F1": 0.5566086529427174,
+      "non_glass_FPR": 0.060505498612027316,
+      "images": 542,
+      "TP": 40612862,
+      "FP": 5493663,
+      "TN": 85302432,
+      "FN": 5687707
+    },
+    "reference_limitation": "engineering anchor only; old A used different decoder and BCE-only loss, not an isolated truncation control"
+  },
+  "expansion_policy": "Four fresh40epoch fits only, seeds43/44 paired; reuse seed42; no additional seed or module",
+  "replications": 1,
+  "no_scientific_plots": true,
+  "resume": "completed epoch boundaries; model/optimizer/scheduler/RNG/config/manifest match required",
+  "limitations": [
+    "development split has been seen in earlier work; not a pristine generalization test",
+    "scene IDs unavailable",
+    "S2->S3 jointly changes scale-consistent boundary generation and hard-to-soft targets; cannot isolate those two effects with four groups alone"
+  ],
+  "task_warmstart": false,
+  "reference_start": "FR21 fixed retained source-domain reference",
+  "new_branch": "Only first-fusion output projection: shared W -> independent Wp,Wv; +1024parameters",
+  "additional_modules": "One32to32 bias-free value projection, zero initialized; no extra gate/head/loss",
+  "target_dataset_access": false,
+  "phase_id": "B40_SEEDREP_V1",
+  "run_identity": "B40_SEEDREP:FR29:44",
+  "initialization": "Fresh task parameters plus original cached ImageNet weights; no task/smoke warmstart",
+  "execution_status": "AUTHORIZED_FOR_RUN",
+  "output_root": "${RUN_ROOT}"
+}

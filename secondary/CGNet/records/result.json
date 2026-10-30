@@ -1,0 +1,40 @@
+{
+  "model": "CGNet",
+  "status": "COMPLETE",
+  "seed": 42,
+  "epochs": 40,
+  "best_epoch": 21,
+  "validation": {
+    "mIoU": 0.7308754938462607,
+    "glass_IoU": 0.656795948565396,
+    "MAE": 0.1607707008062537,
+    "boundary_F1": 0.35085961310146213,
+    "non_glass_FPR": 0.11492880833696648,
+    "images": 542,
+    "TP": 37263749,
+    "FP": 10435087,
+    "TN": 80361008,
+    "FN": 9036820,
+    "glass_FNR": 0.19517729900900355
+  },
+  "inference_parameters": 491954,
+  "training_parameters": 491954,
+  "train_val_peak_allocated_MiB": 601.71484375,
+  "train_val_peak_reserved_MiB": 624.0,
+  "training_seconds": 1105.8455505999846,
+  "last5_mIoU": [
+    0.7201464460358802,
+    0.7248407544663416,
+    0.7246080858510826,
+    0.7229043611139226,
+    0.7235904650517107
+  ],
+  "last5_loss": [
+    0.44207308532127154,
+    0.45263742762738046,
+    0.4420126239971921,
+    0.44936537940563753,
+    0.43454562484998105
+  ],
+  "convergence_ceiling_claim": false
+}

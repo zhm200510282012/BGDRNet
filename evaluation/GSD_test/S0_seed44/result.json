@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETE",
+  "model": "S0_seed44",
+  "dataset": "GSD_test",
+  "checkpoint_epoch": 15,
+  "metrics": {
+    "images": 813,
+    "pixels": 202307732,
+    "TP": 57240406,
+    "FP": 11416190,
+    "TN": 122962611,
+    "FN": 10688525,
+    "mIoU": 0.7845174864284887,
+    "glass_IoU": 0.7214105326022504,
+    "background_IoU": 0.8476244402547269,
+    "non_glass_FPR": 0.08495528993445924,
+    "glass_FNR": 0.15734864133221824,
+    "MAE": 0.12038050824301312,
+    "boundary_F1": 0.4966455993761379,
+    "predicted_foreground_fraction": 0.3393671379796794,
+    "true_foreground_fraction": 0.3357703154914514
+  },
+  "seconds_this_invocation": 14.310651699999653,
+  "resumed_images": 0,
+  "threshold": 0.5,
+  "input_size": 256,
+  "precision": "CUDA BF16 autocast, FP32 weights",
+  "batch_size": 1,
+  "source_training": "GSD training split only; no target adaptation",
+  "evaluation_history_disclosed": true,
+  "gt_rule": "raw>0",
+  "test_tuning": false
+}

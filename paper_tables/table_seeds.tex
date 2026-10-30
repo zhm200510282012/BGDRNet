@@ -1,0 +1,19 @@
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\captionof{table}{Local mapping comparison across seeds 42, 43 and 44. Entries are mean $\pm$ sample standard deviation; all metrics except MAE are percentages. FR28 shares the content/product output mapping; FR29 uses independent maps (+1,024 parameters). This replication does not include S0 or external baselines.}\label{tab:seeds}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & mIoU$\uparrow$ & gIoU$\uparrow$ & MAE$\downarrow$ & BF1$\uparrow$ & FPR$\downarrow$ & FNR$\downarrow$\\\midrule
+
+\multicolumn{7}{l}{\textit{development}}\\
+FR28 & $82.71\pm0.60$ & $77.63\pm0.80$ & $0.0935\pm0.0028$ & $58.46\pm0.80$ & $6.94\pm0.44$ & $11.81\pm1.12$\\
+FR29 & $82.90\pm0.76$ & $77.94\pm0.95$ & $0.0918\pm0.0035$ & $59.25\pm0.71$ & $7.18\pm0.54$ & $11.08\pm0.81$\\
+\multicolumn{7}{l}{\textit{GSD\_test}}\\
+FR28 & $80.05\pm0.38$ & $74.11\pm0.61$ & $0.1075\pm0.0021$ & $57.70\pm0.66$ & $7.61\pm0.55$ & $14.73\pm1.43$\\
+FR29 & $80.12\pm0.56$ & $74.27\pm0.78$ & $0.1067\pm0.0027$ & $58.09\pm0.40$ & $7.90\pm0.42$ & $14.12\pm1.20$\\
+\multicolumn{7}{l}{\textit{GEGD2}}\\
+FR28 & $69.83\pm0.11$ & $72.92\pm0.46$ & $0.1849\pm0.0017$ & $30.31\pm1.00$ & $15.56\pm1.54$ & $18.96\pm1.31$\\
+FR29 & $69.97\pm1.14$ & $73.25\pm1.50$ & $0.1830\pm0.0073$ & $30.97\pm0.38$ & $16.39\pm1.39$ & $18.15\pm2.35$\\
+\bottomrule
+\end{tabular}
+\end{minipage}\par\medskip

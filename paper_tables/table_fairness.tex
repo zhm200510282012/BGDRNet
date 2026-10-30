@@ -1,0 +1,14 @@
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\centering\small\setlength{\tabcolsep}{3pt}
+\captionof{table}{Controlled-comparison conditions. All four models use the same split, input size, augmentation, optimizer, learning-rate schedule and 40-epoch budget. Main denotes BCE plus soft IoU. Frozen refers to encoder BN running statistics; its affine parameters remain trainable. Auxiliary objectives and normalization are not matched.}\label{tab:fairness}
+\begin{tabular}{llllr}
+\toprule
+Model & Initialization & Supervision & Normalization & Best epoch\\\midrule
+
+S0 & ImageNet prefix & Main only & Frozen / GN & 30\\
+FR29 & ImageNet prefix & Main + region/edge & Frozen / GN & 28\\
+LRASPP\_prefix & ImageNet prefix & Main only & Frozen / trained BN & 24\\
+CGNet & Scratch & Main only & Trained BN & 21\\
+\bottomrule
+\end{tabular}
+\end{minipage}\par\medskip

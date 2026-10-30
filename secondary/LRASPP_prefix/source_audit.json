@@ -1,0 +1,76 @@
+{
+  "audit_date_local": "2026-10-28",
+  "method": "Primary paper/repository identity checks plus bounded public repository searches; no author contact, no large weight/data downloads",
+  "models": {
+    "CGNet": {
+      "status": "READY_PENDING_SMOKE",
+      "paper": "CGNet: A Light-weight Context Guided Network for Semantic Segmentation; Tianyi Wu et al.; IEEE TIP volume30 pages1169-1179",
+      "paper_url": "https://arxiv.org/abs/1811.08201",
+      "official_repository": "https://github.com/wutianyiRosun/CGNet",
+      "commit": "cfccea377a6f0a659e807e8759c82dbffba02d7f",
+      "source_file": "model/CGNet.py",
+      "source_git_blob": "64520a8b827e311f1d800e2ebe9d7271b88dde18",
+      "license": "MIT; retained vendor/LICENSE.CGNet",
+      "configuration": "Author default M3 N21 dropout_flag=False, classes changed19->2 only through the original constructor argument",
+      "source_edits": "No architecture or API patch; trailing blank lines normalized when saving the text",
+      "pretrained_availability": "Author README advertises Baidu Cityscapes/CamVid segmentation checkpoints; actual file access/content NOT_VERIFIED; not downloaded or used",
+      "pretrained_policy": "Official scratch initialization. No ImageNet encoder checkpoint supplied by the official CGNet model",
+      "original_recipe": "Author Cityscapes script Adam lr1e-3 wd5e-4, weighted CE and random scale/mirror; README 300epochs train or350trainval. Current task deliberately uses FR29 fixed40epoch recipe; not original-paper reproduction"
+    },
+    "HARD-XS": {
+      "status": "BLOCKED",
+      "paper": "HARD : Hardware-Aware lightweight Real-time semantic segmentation model Deployable from Edge to GPU",
+      "authors": "YoungWook Kwon; WanSoo Kim; HyunJin Kim",
+      "venue": "ACCV2024",
+      "paper_url": "https://openaccess.thecvf.com/content/ACCV2024/html/Kwon_HARD__Hardware-Aware_lightweight_Real-time_semantic_segmentation_model_Deployable_from_ACCV_2024_paper.html",
+      "author_lab": "https://www.empaslab.com/",
+      "verified_lab_github": "https://github.com/EmPasLab",
+      "searches": [
+        "HARD-XS github code",
+        "HARD YoungWook Kwon github",
+        "HARD Hardware-Aware lightweight code",
+        "GitHub repository search HARD semantic segmentation",
+        "All public repositories returned for org EmPasLab"
+      ],
+      "code": "AUTHOR_IMPLEMENTATION_NOT_LOCATED_IN_BOUNDED_SEARCH",
+      "configuration": "Author executable XS configuration NOT_OBTAINED",
+      "pretrained_weights": "UNKNOWN_NOT_OBTAINED",
+      "access_limitation": "Primary CVF paper indexed but web full PDF fetch returned403; no repeated download attempts or access circumvention",
+      "reason": "Paper identity alone does not establish runnable author implementation. No verified official code/config/weight source, so no guessed HARD-XS implementation or training. Not HarDNet.",
+      "unblock_requirement": "Author repository/archive with traceable XS model configuration; weight provenance if using pretraining"
+    },
+    "EFRNet_ICME2021": {
+      "status": "BLOCKED",
+      "paper": "EFRNet: A Lightweight Network with Efficient Feature Fusion and Refinement for Real-Time Semantic Segmentation",
+      "authors": "Kuayue Zhang; Qingmin Liao; Juncheng Zhang; Shaojun Liu; Haoyu Ma; Jing-Hao Xue",
+      "venue": "ICME2021",
+      "doi": "10.1109/ICME51207.2021.9428371",
+      "primary_fulltext": "https://discovery.ucl.ac.uk/id/eprint/10129651/1/KuayueZhang-ICME2021-final.pdf",
+      "searches": [
+        "EFRNet Kuayue github",
+        "EFRNet 9428371 code github",
+        "EFRNet Zhang code implementation github",
+        "GitHub repository name search EFRNet",
+        "Primary fulltext github/code link search"
+      ],
+      "code": "AUTHOR_IMPLEMENTATION_NOT_LOCATED_IN_BOUNDED_SEARCH",
+      "configuration": "Author executable configuration NOT_OBTAINED",
+      "pretrained_weights": "UNKNOWN_NOT_OBTAINED",
+      "excluded_homonym": "https://github.com/zhuyr97/EFRNet README explicitly Enhanced Fast Residual Network for Efficient SuperResolution NTIRE2023; copied evidence audit/EFRNet_unrelated_README.md",
+      "other_exclusions": "Efficient Feature Reconstructing Network for Real-Time Scene Parsing and Edge Feature Refinement homonyms are not this ICME paper",
+      "reason": "Exact paper identity verified using author institutional accepted manuscript, but no traceable author implementation found; paper-derived guessing is outside the requested scope",
+      "unblock_requirement": "Traceable author ICME2021 source archive/repository and executable model configuration"
+    },
+    "LRASPP_prefix": {
+      "status": "READY_PENDING_SMOKE",
+      "source": "D:/SIVP/glass_s2_operatingpoint_20261025/pretrained_decoder_control/model.py",
+      "identity": "Existing same-backbone adaptation, NOT full official LR-ASPP",
+      "configuration": "ImageNet MobileNetV2 features[:11], low index6, original torchvision LRASPPHead(low32,high64,num_classes2,inter128), bilinear output, difference of2logits",
+      "source_edits": "Only dependency import s2_frozen renamed prefix_s2_frozen to prevent module-name collision; architecture retained",
+      "pretraining": "${TORCH_CHECKPOINTS}/mobilenet_v2-b0353104.pth; tensor equality checked in smoke",
+      "existing_checkpoint": "Old20epoch seed42 experiment exists, best20; preserve and do not extend oldcosine20. Fresh40epoch run authorized",
+      "weights_downloaded_this_stage": false
+    }
+  },
+  "scope_limit": "BLOCKED is not a claim that no code exists anywhere; it states this audit did not obtain reliable matching code. Public benchmark scores are not used as GSD comparison metrics."
+}

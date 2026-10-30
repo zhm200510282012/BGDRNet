@@ -1,0 +1,3 @@
+Project-authored source and derived records: Copyright 2026 Huangming Zhang. No blanket open-source license is assigned in this release. Source is made available for inspection and scientific reproducibility; contact the author regarding reuse permissions beyond applicable law and platform terms.
+Third-party notices remain in licenses/ and secondary/**/vendor or author_code. Their original terms apply to those components. This notice does not relicense third-party material.
+Datasets and pretrained/fitted weights are not redistributed. Download source datasets and initial weights from their original authors and follow their terms.

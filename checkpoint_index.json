@@ -1,0 +1,188 @@
+{
+  "S0_seed42": {
+    "variant": "S0",
+    "seed": 42,
+    "selected_epoch": 30,
+    "selection": "maximum development global mIoU; earliest exact tie",
+    "parameters": 255969,
+    "files": {
+      "best.pt": {
+        "expected_path": "weights/S0_seed42/best.pt",
+        "bytes": 1637821,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      },
+      "last.pt": {
+        "expected_path": "weights/S0_seed42/last.pt",
+        "bytes": 3812123,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      },
+      "deployment.pt": {
+        "expected_path": "weights/S0_seed42/deployment.pt",
+        "bytes": 1131645,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      }
+    }
+  },
+  "FR29_seed42": {
+    "variant": "FR29",
+    "seed": 42,
+    "selected_epoch": 28,
+    "selection": "maximum development global mIoU; earliest exact tie",
+    "parameters": 278804,
+    "files": {
+      "best.pt": {
+        "expected_path": "weights/FR29_seed42/best.pt",
+        "bytes": 1796971,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      },
+      "last.pt": {
+        "expected_path": "weights/FR29_seed42/last.pt",
+        "bytes": 4188947,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      },
+      "deployment.pt": {
+        "expected_path": "weights/FR29_seed42/deployment.pt",
+        "bytes": 1233975,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      }
+    }
+  },
+  "FR29_seed43": {
+    "variant": "FR29",
+    "seed": 43,
+    "selected_epoch": 27,
+    "selection": "maximum development global mIoU; earliest exact tie",
+    "parameters": 278804,
+    "files": {
+      "best.pt": {
+        "expected_path": "weights/FR29_seed43/best.pt",
+        "bytes": 1796139,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      },
+      "last.pt": {
+        "expected_path": "weights/FR29_seed43/last.pt",
+        "bytes": 4188115,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      },
+      "deployment.pt": {
+        "expected_path": "weights/FR29_seed43/deployment.pt",
+        "bytes": 1234039,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      }
+    }
+  },
+  "FR29_seed44": {
+    "variant": "FR29",
+    "seed": 44,
+    "selected_epoch": 28,
+    "selection": "maximum development global mIoU; earliest exact tie",
+    "parameters": 278804,
+    "files": {
+      "best.pt": {
+        "expected_path": "weights/FR29_seed44/best.pt",
+        "bytes": 1796139,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      },
+      "last.pt": {
+        "expected_path": "weights/FR29_seed44/last.pt",
+        "bytes": 4188115,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      },
+      "deployment.pt": {
+        "expected_path": "weights/FR29_seed44/deployment.pt",
+        "bytes": 1234039,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      }
+    }
+  },
+  "S0_seed43": {
+    "variant": "S0",
+    "seed": 43,
+    "selected_epoch": 25,
+    "selection": "maximum development global mIoU; earliest exact tie",
+    "parameters": 255969,
+    "files": {
+      "best.pt": {
+        "expected_path": "weights/S0_seed43/best.pt",
+        "bytes": 1637885,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      },
+      "last.pt": {
+        "expected_path": "weights/S0_seed43/last.pt",
+        "bytes": 3812187,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      },
+      "deployment.pt": {
+        "expected_path": "weights/S0_seed43/deployment.pt",
+        "bytes": 1131645,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      }
+    }
+  },
+  "S0_seed44": {
+    "variant": "S0",
+    "seed": 44,
+    "selected_epoch": 15,
+    "selection": "maximum development global mIoU; earliest exact tie",
+    "parameters": 255969,
+    "files": {
+      "best.pt": {
+        "expected_path": "weights/S0_seed44/best.pt",
+        "bytes": 1637885,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      },
+      "last.pt": {
+        "expected_path": "weights/S0_seed44/last.pt",
+        "bytes": 3812187,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      },
+      "deployment.pt": {
+        "expected_path": "weights/S0_seed44/deployment.pt",
+        "bytes": 1131645,
+        "included": false,
+        "status": "LOCAL_PRESENT_REDISTRIBUTION_NOT_CLEARED"
+      }
+    }
+  },
+  "FR28_seed42": {
+    "variant": "FR28",
+    "seed": 42,
+    "selected_epoch": 22,
+    "parameters": 277780,
+    "files": {},
+    "weights_included": false
+  },
+  "FR28_seed43": {
+    "variant": "FR28",
+    "seed": 43,
+    "selected_epoch": 20,
+    "parameters": 277780,
+    "files": {},
+    "weights_included": false
+  },
+  "FR28_seed44": {
+    "variant": "FR28",
+    "seed": 44,
+    "selected_epoch": 22,
+    "parameters": 277780,
+    "files": {},
+    "weights_included": false
+  }
+}

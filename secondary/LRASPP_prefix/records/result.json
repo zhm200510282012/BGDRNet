@@ -1,0 +1,40 @@
+{
+  "model": "LRASPP_prefix",
+  "status": "COMPLETE",
+  "seed": 42,
+  "epochs": 40,
+  "best_epoch": 24,
+  "validation": {
+    "mIoU": 0.7919843271683784,
+    "glass_IoU": 0.732250325903728,
+    "MAE": 0.11562024129187892,
+    "boundary_F1": 0.46565757604623914,
+    "non_glass_FPR": 0.0850086228928678,
+    "images": 542,
+    "TP": 39555445,
+    "FP": 7718451,
+    "TN": 83077644,
+    "FN": 6745124,
+    "glass_FNR": 0.1456812334206951
+  },
+  "inference_parameters": 256324,
+  "training_parameters": 256324,
+  "train_val_peak_allocated_MiB": 369.19384765625,
+  "train_val_peak_reserved_MiB": 442.0,
+  "training_seconds": 543.1952479999782,
+  "last5_mIoU": [
+    0.7878294861213069,
+    0.7883038381839798,
+    0.7873327190410095,
+    0.7876718254579249,
+    0.7874829749374773
+  ],
+  "last5_loss": [
+    0.26741600861408615,
+    0.2657651621917077,
+    0.2650844155092521,
+    0.26612077015572366,
+    0.26312872107618407
+  ],
+  "convergence_ceiling_claim": false
+}

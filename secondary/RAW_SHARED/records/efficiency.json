@@ -1,0 +1,18 @@
+{
+  "parameters": 277780,
+  "conv_MACs": 329932800,
+  "conv_FLOPs_2MACs": 659865600,
+  "linear_MACs": 2097152,
+  "attention_MACs": 4194304,
+  "matrix_FLOPs_2MACs": 672448512,
+  "matrix_FLOPs_scope": "conv + linear + QK/AV matrix operations; excludes normalization, softmax, interpolation and elementwise ops",
+  "FLOPs_scope": "conv only; excludes normalization, bias, pooling, activations, resize and elementwise operations",
+  "latency_ms_median": 10.036224365234375,
+  "latency_ms_p95": 10.645092487335205,
+  "precision": "AMP BF16, FP32 weights; batch1; model only; no disk/CPU postprocess",
+  "measurement_process": "fresh subprocess for each variant; no optimizer or data cache in this process",
+  "inference_baseline_allocated_MiB": 33.91259765625,
+  "inference_peak_allocated_MiB": 55.15478515625,
+  "inference_incremental_allocated_MiB": 21.2421875,
+  "inference_peak_reserved_MiB": 62.0
+}

@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETE",
+  "model": "FR29_seed43",
+  "dataset": "GSD_test",
+  "checkpoint_epoch": 27,
+  "metrics": {
+    "images": 813,
+    "pixels": 202307732,
+    "TP": 58288785,
+    "FP": 11068469,
+    "TN": 123310332,
+    "FN": 9640146,
+    "mIoU": 0.7970330492599138,
+    "glass_IoU": 0.7378570054204315,
+    "background_IoU": 0.8562090930993962,
+    "non_glass_FPR": 0.08236767196635428,
+    "glass_FNR": 0.14191517307993556,
+    "MAE": 0.10927894905252314,
+    "boundary_F1": 0.5823759198689822,
+    "predicted_foreground_fraction": 0.34283046581729265,
+    "true_foreground_fraction": 0.3357703154914514
+  },
+  "seconds_this_invocation": 17.5186715000018,
+  "resumed_images": 0,
+  "threshold": 0.5,
+  "input_size": 256,
+  "precision": "CUDA BF16 autocast, FP32 weights",
+  "batch_size": 1,
+  "source_training": "GSD training split only; no target adaptation",
+  "evaluation_history_disclosed": true,
+  "gt_rule": "raw>0",
+  "test_tuning": false
+}

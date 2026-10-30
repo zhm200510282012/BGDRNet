@@ -1,0 +1,72 @@
+{
+  "FR28": {
+    "parameters": 277780,
+    "best_epoch": 22,
+    "checkpoint_names": {
+      "best": "best.pt",
+      "deployment": "deployment.pt"
+    },
+    "checkpoint_bytes": {
+      "best": 1790445,
+      "deployment": 1229497
+    },
+    "weights_included": false,
+    "status": "ARCHIVAL_SOURCE_ONLY; historical paths require relocation"
+  },
+  "RAW_SHARED": {
+    "parameters": 277780,
+    "best_epoch": 33,
+    "checkpoint_names": {
+      "best": "best.pt",
+      "deployment": "deployment.pt"
+    },
+    "checkpoint_bytes": {
+      "best": 1794157,
+      "deployment": 1229497
+    },
+    "weights_included": false,
+    "status": "ARCHIVAL_SOURCE_ONLY; historical paths require relocation"
+  },
+  "RAW_SEPARATE": {
+    "parameters": 278804,
+    "best_epoch": 30,
+    "checkpoint_names": {
+      "best": "best.pt",
+      "deployment": "deployment.pt"
+    },
+    "checkpoint_bytes": {
+      "best": 1798699,
+      "deployment": 1233975
+    },
+    "weights_included": false,
+    "status": "ARCHIVAL_SOURCE_ONLY; historical paths require relocation"
+  },
+  "CGNet": {
+    "parameters": 491954,
+    "best_epoch": 21,
+    "checkpoint_names": {
+      "best": "best.pt",
+      "deployment": "deployment.pt"
+    },
+    "checkpoint_bytes": {
+      "best": 2763159,
+      "deployment": 2163671
+    },
+    "weights_included": false,
+    "status": "ARCHIVAL_SOURCE_ONLY; historical paths require relocation"
+  },
+  "LRASPP_prefix": {
+    "parameters": 256324,
+    "best_epoch": 24,
+    "checkpoint_names": {
+      "best": "best.pt",
+      "deployment": "deployment.pt"
+    },
+    "checkpoint_bytes": {
+      "best": 1702589,
+      "deployment": 1124605
+    },
+    "weights_included": false,
+    "status": "ARCHIVAL_SOURCE_ONLY; historical paths require relocation"
+  }
+}

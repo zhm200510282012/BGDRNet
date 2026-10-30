@@ -1,0 +1,22 @@
+{
+  "parameters": 83715784,
+  "conv_MACs": 40908162496,
+  "linear_MACs": 0,
+  "matrix_FLOPs_2MACs": 81816324992,
+  "single_model_baseline_allocated_MiB": 354.7529296875,
+  "single_model_peak_allocated_MiB": 687.89697265625,
+  "single_model_incremental_forward_MiB": 333.14404296875,
+  "single_model_peak_reserved_MiB": 744.0,
+  "scope": "All original model parameters/outputs retained, no optimizer; matrix ops only; model forward excludes external author CPU transforms",
+  "paired_latency": {
+    "GlassNet_published_standard256_noCRF": {
+      "median_ms": 50.82130000118923,
+      "p95_ms": 52.72809499911091
+    },
+    "FR29": {
+      "median_ms": 8.882199999789009,
+      "p95_ms": 9.803180001108553
+    }
+  },
+  "precision": "SameGPU /256 /batch1 /BF16 autocast /FP32 weights; synchronized host,160samples"
+}

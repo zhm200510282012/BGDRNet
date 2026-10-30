@@ -1,0 +1,17 @@
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\captionof{table}{Complete-system comparison, seeds 42, 43 and 44. Entries are mean $\pm$ sample SD across all three runs. All metrics except MAE are percentages. All six fits and both evaluation datasets are complete.}\label{tab:fullseeds}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & mIoU & gIoU & MAE & BF1 & FPR & FNR\\\midrule
+\multicolumn{7}{l}{\textit{development}}\\
+S0 & $81.61\pm0.31$ & $76.15\pm0.24$ & $0.0997\pm0.0052$ & $52.65\pm2.16$ & $6.94\pm0.85$ & $13.48\pm1.01$\\
+FR29 & $82.90\pm0.76$ & $77.94\pm0.95$ & $0.0918\pm0.0035$ & $59.25\pm0.71$ & $7.18\pm0.54$ & $11.08\pm0.81$\\
+\multicolumn{7}{l}{\textit{GSD\_test}}\\
+S0 & $78.99\pm0.48$ & $72.68\pm0.51$ & $0.1138\pm0.0059$ & $51.58\pm1.67$ & $7.72\pm0.67$ & $16.22\pm0.46$\\
+FR29 & $80.12\pm0.56$ & $74.27\pm0.78$ & $0.1067\pm0.0027$ & $58.09\pm0.40$ & $7.90\pm0.42$ & $14.12\pm1.20$\\
+\multicolumn{7}{l}{\textit{GEGD2}}\\
+S0 & $67.56\pm0.59$ & $70.37\pm0.47$ & $0.2025\pm0.0078$ & $25.92\pm1.24$ & $15.46\pm1.02$ & $21.85\pm0.40$\\
+FR29 & $69.97\pm1.14$ & $73.25\pm1.50$ & $0.1830\pm0.0073$ & $30.97\pm0.38$ & $16.39\pm1.39$ & $18.15\pm2.35$\\
+\bottomrule\end{tabular}
+\end{minipage}\par\medskip

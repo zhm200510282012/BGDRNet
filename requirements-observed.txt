@@ -1,0 +1,7 @@
+# Recorded environment; install matching CUDA torch wheels separately.
+# Statistics reproduction requires only Python standard library.
+torch==2.7.1+cu126
+torchvision==0.22.1+cu126
+numpy==2.1.2
+Pillow==11.0.0
+opencv-python==4.10.0.84

@@ -1,0 +1,17 @@
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\centering\small\setlength{\tabcolsep}{3pt}
+\captionof{table}{Complete inference resources. Sessions A, B and C are separate paired comparisons; latency should be compared within each session. GF denotes matrix GFLOPs (MACs multiplied by two); memory is peak PyTorch allocated MiB measured in a fresh single-model process, not driver memory or training memory. All timings use batch one, 256-pixel input, BF16 autocast and FP32 weights on the same GPU. A dash means that no separate session-C FR29 memory value is supplied.}\label{tab:resources}
+\begin{tabular}{lrrrrrr}
+\toprule
+Session & Model & Parameters & GF & Median ms & p95 ms & MiB\\\midrule
+
+A & S0 & 255,969 & 0.538 & 7.376 & 7.665 & 14.987\\
+A & FR29 & 278,804 & 0.675 & 9.784 & 10.314 & 55.161\\
+B & FR29 & 278,804 & 0.675 & 8.948 & 9.852 & 55.162\\
+B & LRASPP\_prefix & 256,324 & 0.401 & 6.279 & 7.205 & 8.791\\
+B & CGNet & 491,954 & 1.682 & 15.266 & 17.215 & 46.300\\
+C & FR29 & 278,804 & 0.675 & 8.882 & 9.803 & ---\\
+C & GlassNet & 83,715,784 & 81.816 & 50.821 & 52.728 & 687.897\\
+\bottomrule
+\end{tabular}
+\end{minipage}\par\medskip

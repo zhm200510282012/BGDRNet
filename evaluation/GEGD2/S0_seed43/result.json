@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETE",
+  "model": "S0_seed43",
+  "dataset": "GEGD2",
+  "checkpoint_epoch": 25,
+  "metrics": {
+    "images": 950,
+    "pixels": 3899910061,
+    "TP": 1784922419,
+    "FP": 245332358,
+    "TN": 1380973766,
+    "FN": 488681518,
+    "mIoU": 0.6807740728890089,
+    "glass_IoU": 0.708601651634862,
+    "background_IoU": 0.6529464941431559,
+    "non_glass_FPR": 0.15085250825754132,
+    "glass_FNR": 0.21493695979644145,
+    "MAE": 0.197259686572745,
+    "boundary_F1": 0.26737893724105843,
+    "predicted_foreground_fraction": 0.5205901534250792,
+    "true_foreground_fraction": 0.5829888129309863
+  },
+  "seconds_this_invocation": 154.75752190000094,
+  "resumed_images": 0,
+  "threshold": 0.5,
+  "input_size": 256,
+  "precision": "CUDA BF16 autocast, FP32 weights",
+  "batch_size": 1,
+  "source_training": "GSD training split only; no target adaptation",
+  "evaluation_history_disclosed": true,
+  "gt_rule": "raw==255",
+  "test_tuning": false
+}

@@ -1,0 +1,26 @@
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\captionof{table}{Paired FR29 minus S0 differences at matched seed labels. Units are percentage points except MAE. Positive IoU/BF1 and negative error-rate/MAE differences favor FR29. SD describes differences across three training runs; it is not a confidence interval.}\label{tab:fullpaired}
+\begin{tabular}{lrrrrr}
+\toprule
+Dataset & Metric & 42 & 43 & 44 & Mean $\pm$ SD\\\midrule
+development & mIoU & +2.125 & +0.443 & +1.295 & +1.288$\pm$0.841\\
+development & glass\_IoU & +2.899 & +0.924 & +1.551 & +1.792$\pm$1.009\\
+development & MAE & -0.009 & -0.002 & -0.014 & -0.008$\pm$0.006\\
+development & boundary\_F1 & +6.219 & +5.270 & +8.332 & +6.607$\pm$1.567\\
+development & non\_glass\_FPR & +0.114 & +1.548 & -0.943 & +0.240$\pm$1.250\\
+development & glass\_FNR & -3.457 & -3.385 & -0.359 & -2.400$\pm$1.768\\
+GSD\_test & mIoU & +1.362 & +0.594 & +1.448 & +1.134$\pm$0.470\\
+GSD\_test & glass\_IoU & +2.023 & +1.022 & +1.724 & +1.590$\pm$0.514\\
+GSD\_test & MAE & -0.005 & -0.003 & -0.013 & -0.007$\pm$0.006\\
+GSD\_test & boundary\_F1 & +6.087 & +5.482 & +7.971 & +6.513$\pm$1.298\\
+GSD\_test & non\_glass\_FPR & +0.719 & +0.889 & -1.067 & +0.180$\pm$1.084\\
+GSD\_test & glass\_FNR & -3.384 & -2.468 & -0.454 & -2.102$\pm$1.499\\
+GEGD2 & mIoU & +1.816 & +3.192 & +2.228 & +2.412$\pm$0.706\\
+GEGD2 & glass\_IoU & +2.503 & +4.056 & +2.088 & +2.882$\pm$1.037\\
+GEGD2 & MAE & -0.012 & -0.023 & -0.024 & -0.020$\pm$0.006\\
+GEGD2 & boundary\_F1 & +4.261 & +4.663 & +6.234 & +5.053$\pm$1.042\\
+GEGD2 & non\_glass\_FPR & +2.077 & +2.473 & -1.765 & +0.928$\pm$2.341\\
+GEGD2 & glass\_FNR & -3.848 & -5.819 & -1.427 & -3.698$\pm$2.200\\
+\bottomrule\end{tabular}
+\end{minipage}\par\medskip

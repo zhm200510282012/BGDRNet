@@ -1,0 +1,14 @@
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\centering\small\setlength{\tabcolsep}{3pt}
+\captionof{table}{GEGD2 results (950 images), without target adaptation, for the same selected checkpoints. All metrics except MAE are percentages. gIoU is glass IoU; BF1 is boundary F1. FPR and FNR denote background false positives and glass false negatives, respectively.}\label{tab:gegd}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & mIoU$\uparrow$ & gIoU$\uparrow$ & MAE$\downarrow$ & BF1$\uparrow$ & FPR$\downarrow$ & FNR$\downarrow$\\\midrule
+
+FR29 & 69.499 & 72.825 & 0.18661 & 30.787 & 16.765 & 18.442\\
+S0 & 67.683 & 70.322 & 0.19879 & 26.526 & 14.687 & 22.290\\
+LRASPP\_prefix & 66.012 & 69.693 & 0.21344 & 20.916 & 19.906 & 20.384\\
+CGNet & 55.545 & 57.592 & 0.30030 & 16.289 & 21.371 & 33.604\\
+\bottomrule
+\end{tabular}
+\end{minipage}\par\medskip

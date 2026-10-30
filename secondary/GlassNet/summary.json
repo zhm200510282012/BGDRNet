@@ -1,0 +1,48 @@
+{
+  "GSD_test": {
+    "status": "COMPLETE",
+    "condition": "GlassNet_published_standard256_noCRF",
+    "metrics": {
+      "images": 813,
+      "pixels": 202307732,
+      "TP": 63509793,
+      "FP": 8149453,
+      "TN": 126229348,
+      "FN": 4419138,
+      "mIoU": 0.8721205188660208,
+      "glass_IoU": 0.8347941906862796,
+      "background_IoU": 0.909446847045762,
+      "non_glass_FPR": 0.06064537664687156,
+      "glass_FNR": 0.0650553149437903,
+      "MAE": 0.2457851607923738,
+      "boundary_F1": 0.7138493708296734,
+      "predicted_foreground_fraction": 0.3542091312654328,
+      "true_foreground_fraction": 0.3357703154914514
+    },
+    "threshold": 0.5,
+    "no_test_tuning": true
+  },
+  "GEGD2": {
+    "status": "COMPLETE",
+    "condition": "GlassNet_published_standard256_noCRF",
+    "metrics": {
+      "images": 950,
+      "pixels": 3899910061,
+      "TP": 2071153754,
+      "FP": 241755022,
+      "TN": 1384551102,
+      "FN": 202450183,
+      "mIoU": 0.7902513471705621,
+      "glass_IoU": 0.8234028573096394,
+      "background_IoU": 0.7570998370314848,
+      "non_glass_FPR": 0.14865283874439866,
+      "glass_FNR": 0.08904373347766595,
+      "MAE": 0.29906235901811573,
+      "boundary_F1": 0.35478183020096304,
+      "predicted_foreground_fraction": 0.593067209197879,
+      "true_foreground_fraction": 0.5829888129309863
+    },
+    "threshold": 0.5,
+    "no_test_tuning": true
+  }
+}

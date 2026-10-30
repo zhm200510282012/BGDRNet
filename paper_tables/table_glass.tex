@@ -1,0 +1,16 @@
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\centering\small\setlength{\tabcolsep}{3pt}
+\captionof{table}{Author-released GlassNet reference, evaluated with common output resizing and thresholding, without min--max normalization or CRF. All metrics except MAE are percentages. Training, input preprocessing and model selection are not matched to the controlled 40-epoch experiment.}\label{tab:glass}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & mIoU$\uparrow$ & gIoU$\uparrow$ & MAE$\downarrow$ & BF1$\uparrow$ & FPR$\downarrow$ & FNR$\downarrow$\\\midrule
+
+\multicolumn{7}{l}{\textit{GSD\_test}}\\
+GlassNet & 87.212 & 83.479 & 0.24579 & 71.385 & 6.065 & 6.506\\
+FR29 & 80.758 & 75.172 & 0.10388 & 58.396 & 8.032 & 12.884\\
+\multicolumn{7}{l}{\textit{GEGD2}}\\
+GlassNet & 79.025 & 82.340 & 0.29906 & 35.478 & 14.865 & 8.904\\
+FR29 & 69.499 & 72.825 & 0.18661 & 30.787 & 16.765 & 18.442\\
+\bottomrule
+\end{tabular}
+\end{minipage}\par\medskip

@@ -1,0 +1,58 @@
+{
+  "size": 256,
+  "epochs": 40,
+  "seed": 42,
+  "split_seed": 20261025,
+  "batch_size": 8,
+  "lr": 0.0003,
+  "weight_decay": 0.01,
+  "threads": 4,
+  "workers": 0,
+  "augmentation": "RGB bilinear/mask nearest resize256, train horizontal flip p0.5; same epoch-derived order and flip stream",
+  "checkpoint_selection": "maximum development validation global mIoU; earlier epoch wins exact tie",
+  "created_utc": "2026-10-29T04:33:30.473902+00:00",
+  "cache": "D:\\大创\\cache\\glass_external_B40_20261028",
+  "reference_path": "D:\\大创\\cache\\glass_B40_FR29_20261028\\FR29",
+  "weights": "${TORCH_CHECKPOINTS}/mobilenet_v2-b0353104.pth",
+  "candidate_order": [
+    "CGNet",
+    "HARD-XS",
+    "EFRNet_ICME2021",
+    "LRASPP_prefix"
+  ],
+  "runnable": [
+    "CGNet",
+    "LRASPP_prefix"
+  ],
+  "scheduler": "CosineAnnealingLR T_max40 eta_min0, step after epoch",
+  "optimizer": "AdamW, betas .9/.999 eps1e-8, global norm clip5",
+  "precision": "AMP BF16 with FP32 weights; no GradScaler; TF32 disabled; strict deterministic",
+  "loss": "BCEWithLogits + per-image soft IoU; no invented auxiliary heads",
+  "threshold": 0.5,
+  "official_test": "NO_ACCESS_NO_EVALUATION",
+  "initialization": {
+    "CGNet": "Official kaiming initialization; fresh scratch; no segmentation warm start",
+    "LRASPP_prefix": "Fresh cached ImageNet MobileNetV2 prefix + random unmodified torchvision LRASPPHead"
+  },
+  "batchnorm": {
+    "CGNet": "Native BN running statistics and affine parameters trained",
+    "LRASPP_prefix": "Encoder running statistics frozen, affine trained; decoder BN trained"
+  },
+  "parameter_limit": "No pruning or narrowing of official candidates; full binary inference model counted; same order of magnitude",
+  "benchmark": {
+    "size": 256,
+    "batch": 1,
+    "precision": "AMP BF16, FP32 weights",
+    "warmup": 60,
+    "rounds": 4,
+    "samples_per_round": 40,
+    "orders": "forward/reverse/reverse/forward; alternate models after each sample",
+    "timing": "synchronized host perf_counter; model-only with normalization/output resize, excludes disk/decode/native postprocess",
+    "compute": "2*(Conv2d+Linear+attention QK/AV MACs); excludes resize/norm/elementwise/pooling",
+    "memory": "Fresh subprocess per model, absolute allocated/reserved peaks and incremental activation memory; benchmark shared-residency memory reported separately"
+  },
+  "resume": "Full epoch boundaries; model+optimizer+scheduler+RNG+source+config+manifest checked",
+  "plotting": false,
+  "replications": 1,
+  "fixed_budget_limitation": "40 epochs is not a convergence ceiling or original-paper reproduction"
+}

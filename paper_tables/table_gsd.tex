@@ -1,0 +1,14 @@
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\centering\small\setlength{\tabcolsep}{3pt}
+\captionof{table}{GSD test results (813 images) for the fixed 40-epoch, seed-42 comparison. All metrics except MAE are percentages. gIoU is glass IoU; BF1 is boundary F1. FPR and FNR denote background false positives and glass false negatives, respectively.}\label{tab:gsd}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & mIoU$\uparrow$ & gIoU$\uparrow$ & MAE$\downarrow$ & BF1$\uparrow$ & FPR$\downarrow$ & FNR$\downarrow$\\\midrule
+
+FR29 & 80.758 & 75.172 & 0.10388 & 58.396 & 8.032 & 12.884\\
+S0 & 79.397 & 73.149 & 0.10903 & 52.309 & 7.313 & 16.268\\
+LRASPP\_prefix & 77.101 & 70.404 & 0.12660 & 45.512 & 8.937 & 17.149\\
+CGNet & 71.333 & 63.455 & 0.17219 & 35.672 & 12.380 & 21.005\\
+\bottomrule
+\end{tabular}
+\end{minipage}\par\medskip
